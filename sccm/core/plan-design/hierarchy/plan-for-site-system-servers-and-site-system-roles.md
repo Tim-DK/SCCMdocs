@@ -12,10 +12,15 @@ ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: 0a7415ba-2c53-4433-983e-780e92aa662f
 caps.latest.revision: 11
-author: Brendunsms.author: brendunsmanager: angrobe
+author: Brenduns
+ms.author: brenduns
+manager: angrobe
 
 ---
-# Plan for site system servers and site system roles for System Center Configuration Manager*Applies to: System Center Configuration Manager (Current Branch)*
+# Plan for site system servers and site system roles for System Center Configuration Manager
+
+*Applies to: System Center Configuration Manager (Current Branch)*
+
 Each System Center Configuration Manager site you install includes a  a site server which is a **site system server**. The site can also include additional site system servers on computers that are remote from the site server.   Site system servers (the site server or a remote site system server) support **site system roles**.
 
 
@@ -36,7 +41,7 @@ Each System Center Configuration Manager site you install includes a  a site ser
 -   One or more feature specific site system roles like a software update point, which you use to manage software updates for managed devices, or a reporting services point so you can run reports to monitor and understand or share information about your deployment  
 
 
-Different Configuration Manager sites can support a different sets of site system roles. The supported site system roles depends on the type of site (a central administration site, primary site, or secondary site). The topology of your hierarchy can limit the placement of some roles at ceratin site types. For example, the service connection point is only supported at the top-tier site of the hierarchy, which might be a central administration site or a stand-alone primary site. This role is not supported at a child primary site or at secondary sites.  
+Different Configuration Manager sites can support a different sets of site system roles. The supported site system roles depends on the type of site (a central administration site, primary site, or secondary site). The topology of your hierarchy can limit the placement of some roles at certain site types. For example, the service connection point is only supported at the top-tier site of the hierarchy, which might be a central administration site or a stand-alone primary site. This role is not supported at a child primary site or at secondary sites.  
 
 After a site installs, you can move the  location of some site system roles from their default location on the site server to another server (like the management point or distribution point that install by default on a primary or secondary site server). You can also install additional instances of some site system roles to expand the capabilities of your site (provide more services to clients) and to meet your business requirements. Some roles are required, while others are optional:  
 
@@ -52,7 +57,7 @@ After a site installs, you can move the  location of some site system roles from
 
      Unlike most site system roles that install from within the console, to install additional providers you must run Configuration Manager Setup to [Manage the SMS Provider](../../../core/servers/manage/modify-your-infrastructure.md#BKMK_ManageSMSprovider) and then install additional providers on additional computers. You can only install one instance of the SMS Provider on a computer, and that computer  must be in the same domain as the site server.  
 
--   **Application Catalog web service poin** - A site system role that provides software information to the Application Catalog website from the Software Library. Although this role is supported only at primary sites, you can install multiple instances of this role at a site, or at multiple sites in the same hierarchy.  
+-   **Application Catalog web service point** - A site system role that provides software information to the Application Catalog website from the Software Library. Although this role is supported only at primary sites, you can install multiple instances of this role at a site, or at multiple sites in the same hierarchy.  
 
 -   **Application Catalog website point** - A site system role that provides users with a list of available software from the Application Catalog. Although this role is supported only at primary sites, you can install multiple instances of this role at a site, or at multiple sites in the same hierarchy.  
 
