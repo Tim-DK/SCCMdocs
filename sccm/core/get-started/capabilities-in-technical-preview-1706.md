@@ -289,7 +289,7 @@ After the prerequisites are configured, you are ready to use the Wizard to creat
 In this release, we’ve added two new client settings to Configuration Manager. You’ll find these in the **Cloud Services** section.  These settings give you the following capabilities:
 
 - Control which Configuration Manager clients can access a configured cloud management gateway.
-- Automatically register Windows 10 domain-joined Configuration Manger clients with Azure Active Directory.
+- Automatically register Windows 10 domain-joined Configuration Manager clients with Azure Active Directory.
 
 These new settings help you accomplish the capabilities described in the [Configuration Manager 1705 Technical Preview](/sccm/core/get-started/capabilities-in-technical-preview-1705#new-capabilities-for-azure-ad-and-cloud-management).
 
